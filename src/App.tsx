@@ -1,4 +1,5 @@
 import "./App.css";
+import Navbar from "./atoms/Navbar/Navbar";
 import {
   AboutSection,
   BenefitsSection,
@@ -14,6 +15,7 @@ import MainLayout from "./layouts/MainLayout";
 function App() {
   return (
     <MainLayout>
+      <Navbar />
       <HeroSection />
       <AboutSection />
       <MenuSection />
