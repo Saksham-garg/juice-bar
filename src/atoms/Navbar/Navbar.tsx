@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -19,21 +20,51 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <a href="#about" className="hover:text-green-600 transition">
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="hover:text-green-600 transition cursor-pointer"
+            >
               About
-            </a>
-            <a href="#menu" className="hover:text-green-600 transition">
+            </ScrollLink>
+            <ScrollLink
+              to="menu"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="hover:text-green-600 transition cursor-pointer"
+            >
               Menu
-            </a>
-            <a href="#benefits" className="hover:text-green-600 transition">
+            </ScrollLink>
+            <ScrollLink
+              to="benefits"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="hover:text-green-600 transition cursor-pointer"
+            >
               Benefits
-            </a>
-            <a href="#testimonials" className="hover:text-green-600 transition">
+            </ScrollLink>
+            <ScrollLink
+              to="testimonials"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="hover:text-green-600 transition cursor-pointer"
+            >
               Testimonials
-            </a>
-            <a href="#contact" className="hover:text-green-600 transition">
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="hover:text-green-600 transition cursor-pointer"
+            >
               Contact
-            </a>
+            </ScrollLink>
           </div>
 
           {/* Mobile menu button */}
@@ -76,36 +107,51 @@ const Navbar = () => {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden mt-2 space-y-2 pb-2"
           >
-            <a
-              href="#about"
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={800}
+              offset={-80}
               className="block px-3 py-2 hover:bg-gray-800 rounded"
             >
               About
-            </a>
-            <a
-              href="#menu"
+            </ScrollLink>
+            <ScrollLink
+              to="menu"
+              smooth={true}
+              duration={800}
+              offset={-80}
               className="block px-3 py-2 hover:bg-gray-800 rounded"
             >
               Menu
-            </a>
-            <a
-              href="#benefits"
+            </ScrollLink>
+            <ScrollLink
+              to="benefits"
+              smooth={true}
+              duration={800}
+              offset={-80}
               className="block px-3 py-2 hover:bg-gray-800 rounded"
             >
               Benefits
-            </a>
-            <a
-              href="#testimonials"
+            </ScrollLink>
+            <ScrollLink
+              to="testimonials"
+              smooth={true}
+              duration={800}
+              offset={-80}
               className="block px-3 py-2 hover:bg-gray-800 rounded"
             >
               Testimonials
-            </a>
-            <a
-              href="#contact"
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={800}
+              offset={-80}
               className="block px-3 py-2 hover:bg-gray-800 rounded"
             >
               Contact
-            </a>
+            </ScrollLink>
           </motion.div>
         )}
       </div>
